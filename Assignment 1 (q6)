@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+// QUESTION 6:
+// Write a C++ program that reads in a character from the user and checks if it is an
+// uppercase letter using the logical AND operator and the isupper() function. If it is,
+// print "Uppercase letter" to the screen, otherwise print "Not an uppercase letter".
+
+
+int main() {
+    char ch;
+
+    cout<<"Enter a character: ";
+    cin>>ch;
+
+    if( isupper(static_cast<unsigned char>(ch))) {
+        cout << "Uppercase letter" << endl;
+    } else {
+        cout << "Not an uppercase letter" << endl;
+    }
+
+    return 0;
+}
+
