@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+
+// QUESTION 1:
+// Write a C++ program that takes in two integer values from the user and calculates
+// the sum, difference, product, and quotient using the appropriate operators.
+
+int main() {
+    int a,b,sum,diff,product,quotient;
+
+    cout<<"Enter first integer: ";
+    cin>>a;
+    cout<<"Enter second integer: ";
+    cin>>b;
+
+    sum=(a+b);
+    diff=(a-b);
+    product=(a*b);
+    quotient=(a/b);
+    
+    cout<<"Sum: " <<sum<<endl;
+    cout<<"Difference: "<<diff<<endl;
+    cout<<"Product: "<<product<<endl;
+    cout<<"Quotient: "<<quotient<<endl;
+
+    return 0;
+}
