@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+// QUESTION 9:
+// Explain the difference between the assignment operator and the equality operator
+// in C++. Give an example of each.
+
+int main() {
+    cout << "Difference between '=' and '==':"<<endl;
+    
+    cout << "1) '=' assigns a value to a variable."<<endl;
+    cout << "   Example: int x = 5;"<<endl;
+    
+    cout << "2) '==' compares two values and returns true/false."<<endl;
+    cout << "   Example: if (x == 5) { ... }"<<endl;
+    return 0;
+}
