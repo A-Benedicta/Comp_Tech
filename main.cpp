@@ -1,18 +1,41 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
-// QUESTION 11:
-// Explain the difference between the increment and decrement operators in C++.
-// Give an example of each.
+
+// QUESTION 18:
+// Write a C++ program to convert binary to decimal.
 
 
 int main() {
-    cout<< "Increment (++) adds 1."<<endl;
-    cout<< "Example: int x = 5; x++;  // x becomes 6"<<endl;
     
-    
-    cout<< "Decrement (--) subtracts 1."<<endl;
-    cout<< "Example: int y = 5; y--;  // y becomes 4"<<endl;
-    
+    string bin;
+
+    cout << "Enter a binary number: ";
+    cin >> bin;
+
+    bool valid = true;
+    if (bin.empty()) valid = false;
+
+    for (char c : bin) {
+        if (c != '0' && c != '1') {
+            valid = false;
+            break;
+        }
+    }
+
+    if (!valid) {
+        cout << "\nInvalid binary input." << endl;
+        return 0;
+    }
+
+    unsigned long long dec = 0;
+    for (char c : bin) {
+        dec = dec * 2 + (c - '0');
+    }
+
+    cout << "\nDecimal: " << dec << endl;
     return 0;
 }
+
+
+
