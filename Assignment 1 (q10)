@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+
+// QUESTION 10:
+// Write a C++ program that uses the ternary operator to determine the larger of two
+// integers.
+
+
+int main() {
+    int a, b;
+
+    cout<<"Enter first integer: ";
+    cin>>a;
+    cout<<"Enter second integer: ";
+    cin>>b;
+
+    int larger=(a>b)? a:b;
+
+    cout << "Larger integer: " << larger << endl;
+    return 0;
+}
