@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+// QUESTION 3:
+// Write a C++ program that takes in three integer values from the user and checks
+// if they are equal using the equality operator. If they are equal, print "Equal"
+// to the screen, otherwise print "Not equal".
+
+int main(){
+    int a,b,c;
+    
+    cout << "Please enter the first integer: ";
+    cin >> a;
+    cout << "Please enter the second integer: ";
+    cin >> b;
+    cout << "Please enter the third integer: ";
+    cin >> c;
+    
+    if(a==b && a==c){
+        cout<<"Equal";
+    }
+    
+    else{
+        cout<<"Not equal";}
+    
+    return 0;
+}
