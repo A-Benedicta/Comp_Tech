@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// QUESTION 2:
+// Write a C++ program that calculates the area of a circle given the radius as input
+// from the user. Use the formula pi*r^2 and use the exponentiation operator to
+// calculate the squared radius.
+
+int main() {
+    double radius,area;
+    const double pi=3.142;
+    
+    cout<<"Enter the radius of your circle: ";
+    cin>>radius;
+
+//using the formula area=pi*r^2    
+    area=pi*pow(radius,2);
+    
+    cout<<"This is the area of your circle: "<<area<<endl;
+    
+    return 0;
+}
