@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// QUESTION 5:
+// Write a C++ program that reads in two integer values from the user and checks if
+// the first value is greater than the second using the greater than operator. If it is,
+// print "First value is greater" to the screen, otherwise print "Second value is greater"
+
+
+int main()
+{
+    int a,b;
+    cout<<"Enter first integer: ";
+    cin>>a;
+    
+    cout<<"Enter second integer: ";
+    cin>>b;
+    
+    if(a>b){
+        cout<<"First value is greater";
+    } else {
+        cout<<"Second value is greater"<<endl;}
+
+    return 0;
+}
